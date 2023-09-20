@@ -1,0 +1,55 @@
+workspace: 'exp/ustc_1'
+lr: 0.01
+data:
+    data_type: 'ustc'
+    data_root: './Data/ustc_1'
+    start_frame: 0
+    n_train: 400
+    n_test: 400
+    downscale: 1
+    surface: 'SMPL'
+    H: 1224
+    W: 1024
+train:
+    bg: 0
+    change_step: 200
+    num_rays: 4096
+    max_ray_batch: 2048
+    patch_size: 1
+    train_view: [1]
+    in_face: False
+loss:
+    in_rio: 0.875
+    para_dist: 0.0
+    para_weight: 0.1
+    patch_size: 1
+    para_dfm: 0.1
+    para_smooth: 0.0
+    para_hard: 0.0
+    para_sharp: 0.1
+test: 
+    novel_view: False
+    start_test: 0
+    fast_mode: True
+    test_view: [2,3,4,5,6,7]
+    novel_shape: False
+NeRF:
+    near: 0.5
+    far: 3.0
+    fast_mode: True
+    use_direction: False
+    use_appcode: False
+render:
+    k: 3
+    num_steps: 64
+    upsample_steps: 64
+    max_dist: 0.1
+    use_aabb: True
+dfm_net:
+    use_dfm: True
+    change_step: 800
+    num_layers: 5
+    hidden_dim: 128
+    delay_opt: True
+    end_delay_step: 2000
+    skip: [3]
