@@ -80,7 +80,6 @@ OMP_NUM_THREADS=8 python main_nerf_exp.py --cfg_file configs/default.yaml --test
 ```
 This means you want to run inference of with `configs/default.yaml`, and the render poses are inperpolated from `test_view1` and `test_view2`
 
-You could also use our [pretrained model]() to run inference imediately.
 
 ## Citation
 
