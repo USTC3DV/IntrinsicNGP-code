@@ -37,7 +37,7 @@ Please install nvdiffrast [here](https://nvlabs.github.io/nvdiffrast).
 
 
 ## Train
-Download our [preprocessed data](https://drive.google.com/file/d/1HMRxFr-amr31OUFs6CmD7EkYM51A7dnV/view?usp=sharing) and unzip it to `./Data` or organize your own data with the help of [EasyMocap](https://github.com/zju3dv/EasyMocap) in the same folder structure:
+Download our [preprocessed data](https://drive.google.com/file/d/1JQQFZD4f93wFFGsYLR2Eq5IYF8Mk4YIT/view?usp=sharing) and unzip it to `./Data` or organize your own data with the help of [EasyMocap](https://github.com/zju3dv/EasyMocap) in the same folder structure:
 
 ```
 Data
